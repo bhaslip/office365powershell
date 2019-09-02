@@ -1,0 +1,1 @@
+ldifde -f C:\export.txt -r "(Userprincipalname=*)" -l "objectGuid, userPrincipalName"

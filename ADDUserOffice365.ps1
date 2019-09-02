@@ -1,0 +1,1 @@
+﻿Import-Csv -Path "C:\users\bryan haslip\book1.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName} | Export-Csv -Path "C:\users\bryan haslip\book1results.csv"
